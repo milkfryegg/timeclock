@@ -1,18 +1,17 @@
 function worktime(){
     //從系統給的函數去抓時間
-    var time=new Date();
-    var dname=time.getDay(),
-    var mo=time.getMonth(),
-    var yr=time.getFullyear(),
-    var dnum=time.getDate(),
-
-    var hr=time.getHours(),
-    var min=time.getMinutes(),
-    var sec=time.getSeconds(),
+    var time= new Date();
+    var dname = time.getDay(),
+        mo = time.getMonth(),
+        yr = time.getFullYear(),
+        dnum = time.getDate(),
+        hr = time.getHours(),
+        min = time.getMinutes(),
+        sec= time.getSeconds(),
 
     //如果小時超過12 就是下午pm 低於12 就是早上am
      pe="AM";
-    if(hour>=12){
+    if(hr >= 12){
         pe="PM";
     }
     else{
